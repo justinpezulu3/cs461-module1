@@ -1,0 +1,198 @@
+/* 1. Global Reset & Base Variables */
+:root {
+    --bg-light: #f8fafc;
+    --text-main: #334155;
+    --text-heading: #0f172a; /* Deep space-like slate */
+    --accent-blue: #0ea5e9; /* Crisp tech blue */
+    --accent-hover: #0284c7;
+    --card-bg: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.7;
+    color: var(--text-main);
+    background-color: var(--bg-light);
+}
+
+/* 2. Header & Navigation */
+header {
+    background-color: var(--text-heading);
+    color: #ffffff;
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-blue);
+}
+
+/* 3. Main Content Container */
+main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+article {
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+/* 4. Typography & Layout */
+h2 {
+    color: var(--text-heading);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--accent-blue);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+/* 5. Profile Image (Floated for a classic academic layout) */
+figure {
+    float: right;
+    margin: 0 0 2rem 2.5rem;
+    text-align: center;
+    width: 200px; /* Matches your HTML width */
+}
+
+figure img {
+    border-radius: 50%; /* Makes the image a perfect circle */
+    border: 4px solid var(--accent-blue);
+    box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.2);
+    object-fit: cover;
+}
+
+figcaption {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* 6. Skill Tags (Unordered List) */
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 2rem 0;
+    clear: both; /* Ensures it drops below the floated image if necessary */
+}
+
+ul li {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateY(-2px);
+}
+
+/* 7. Coursework (Ordered List) */
+ol {
+    margin: 1.5rem 0 2.5rem 1.2rem;
+    color: var(--text-heading);
+    font-weight: 500;
+}
+
+ol li {
+    margin-bottom: 0.5rem;
+}
+
+ol li::marker {
+    color: var(--accent-blue);
+    font-weight: bold;
+}
+
+/* 8. Contact & Social Links (Aside) */
+aside {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+aside a {
+    display: block;
+    text-align: center;
+    background-color: var(--text-heading);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+aside a:hover {
+    background-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+/* 9. Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* 10. Responsive Design for Mobile */
+@media (max-width: 768px) {
+    figure {
+        float: none;
+        margin: 0 auto 2rem auto;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    nav a {
+        margin: 0 0.8rem;
+    }
+}
