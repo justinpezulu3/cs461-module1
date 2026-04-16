@@ -1,12 +1,3 @@
-/* 1. Global Reset & Base Variables */
-:root {
-    --bg-light: #f8fafc;
-    --text-main: #334155;
-    --text-heading: #0f172a; /* Deep space-like slate */
-    --accent-blue: #0ea5e9; /* Crisp tech blue */
-    --accent-hover: #0284c7;
-    --card-bg: #ffffff;
-}
 
 * {
     box-sizing: border-box;
@@ -17,13 +8,13 @@
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.7;
-    color: var(--text-main);
-    background-color: var(--bg-light);
+    color: #283b48;
+    background-color: #d8d7ce;
 }
 
-/* 2. Header & Navigation */
+
 header {
-    background-color: var(--text-heading);
+    background-color: #222831;
     color: #ffffff;
     padding: 1.5rem 5%;
     display: flex;
@@ -39,7 +30,7 @@ header h1 {
 }
 
 nav a {
-    color: #cbd5e1;
+    color: #ffffff;
     text-decoration: none;
     margin-left: 1.5rem;
     font-weight: 500;
@@ -50,7 +41,7 @@ nav a:hover {
     color: var(--accent-blue);
 }
 
-/* 3. Main Content Container */
+
 main {
     max-width: 900px;
     margin: 3rem auto;
@@ -58,18 +49,18 @@ main {
 }
 
 article {
-    background: var(--card-bg);
+    background: #ffffff ;
     padding: 3rem;
     border-radius: 12px;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
 }
 
-/* 4. Typography & Layout */
+
 h2 {
-    color: var(--text-heading);
+    color: #222831;
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    border-bottom: 3px solid var(--accent-blue);
+    border-bottom: 3px solid #00a6c0;
     display: inline-block;
     padding-bottom: 0.3rem;
 }
@@ -79,17 +70,17 @@ p {
     font-size: 1.05rem;
 }
 
-/* 5. Profile Image (Floated for a classic academic layout) */
+
 figure {
     float: right;
     margin: 0 0 2rem 2.5rem;
     text-align: center;
-    width: 200px; /* Matches your HTML width */
+    width: 200px;
 }
 
 figure img {
-    border-radius: 50%; /* Makes the image a perfect circle */
-    border: 4px solid var(--accent-blue);
+    border-radius: 50%;
+    border: 4px solid #00a6c0;
     box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.2);
     object-fit: cover;
 }
@@ -103,19 +94,19 @@ figcaption {
     letter-spacing: 0.5px;
 }
 
-/* 6. Skill Tags (Unordered List) */
+
 ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
     margin: 2rem 0;
-    clear: both; /* Ensures it drops below the floated image if necessary */
+    clear: both;
 }
 
 ul li {
-    background-color: #e0f2fe;
-    color: #0369a1;
+    background-color: #222831;
+    color: #ffffff;
     padding: 0.4rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -127,10 +118,10 @@ ul li:hover {
     transform: translateY(-2px);
 }
 
-/* 7. Coursework (Ordered List) */
+
 ol {
     margin: 1.5rem 0 2.5rem 1.2rem;
-    color: var(--text-heading);
+    color: #222831;
     font-weight: 500;
 }
 
@@ -139,11 +130,11 @@ ol li {
 }
 
 ol li::marker {
-    color: var(--accent-blue);
+    color: #00a6c0;
     font-weight: bold;
 }
 
-/* 8. Contact & Social Links (Aside) */
+
 aside {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -156,7 +147,7 @@ aside {
 aside a {
     display: block;
     text-align: center;
-    background-color: var(--text-heading);
+    background-color: #222831;
     color: #ffffff;
     text-decoration: none;
     padding: 0.8rem;
@@ -166,11 +157,11 @@ aside a {
 }
 
 aside a:hover {
-    background-color: var(--accent-blue);
+    background-color: #222831;
     transform: translateY(-2px);
 }
 
-/* 9. Footer */
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -179,7 +170,7 @@ footer {
     margin-top: auto;
 }
 
-/* 10. Responsive Design for Mobile */
+
 @media (max-width: 768px) {
     figure {
         float: none;
