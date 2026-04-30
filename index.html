@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width"/>
-        <link rel="stylesheet" href="style.css">
-        <title>Profile Page</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>JUSTINE PEZULU |  Personal Profile Page</title>
+</head>
+<body>
+    <main>
         <header>
-            <h1> JUSTIN PEZULU</h1>
+    <div class="navbar">
+        <div class="container flex">
+             <h1 class="logo"><a href="index.html">JUSTINE PEZULU.</a></h1>
             <nav>
-                <a href="">About Me</a><a href="">Contact</a><a href=""></a>       
+                <ul>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Interests</a></li>
+                    <li><a href="">Academic Courses</a></li>
+                </ul>
             </nav>
-        </header>
-        <main>
-            <article>
-                <h2>About Me</h2>
+        </div>
+    </div>
+</header>
+<article>
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>About me</h1>
                 <p>I’m a 4th bioinformatics student driven by curiosity, creativity, and a deep interest in solving complex biological problems using technology. I enjoy building ideas that sit at the intersection of science and technology, especially those that can create real-world impact in biological research.</p>
                 <p>Beyond academics, I’m constantly exploring new concepts, experimenting with code, and thinking about future-focused solutions, from AI in genomics to space science and emerging technologies. I value learning across disciplines and pushing boundaries to better understand both the natural world and the systems we build around it.</p>
+
+            </div>
+
+            <div class="showcase-form card">
+                <figure>
+                        <img src="images/profile.jpg" alt="Photo of JUSTIN" width="200" height="200"/><figcaption>
+                            Year 4 Bioinformatics Student
+                        </figcaption>
+                    </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="interests">
+        <div class="container">
+            <h2 class="interests text-center my-1">
+                My Interests
+            </h2>
+
+            <div class="grid grid-3 text-center my-4">
                 <ul>
                     <li>Coding (Python, R, JavaScript)</li>
                     <li>Astronomy and space exploration</li>
@@ -25,26 +58,60 @@
                     <li>Creative problem-solving and innovation</li>
                     <li>Watching Movies</li>
                 </ul>
-                <ol>
-                    <li>BT420:Genomics and Bioinformatics</li>
-                    <li>CS425:Computer Graphics</li>
-                    <li>CS453:System Modelling and Simulations</li>
-                </ol>
-                <figure>
-                        <img src="profile.jpg" alt="Photo of JUSTIN" width="200" height="200"/><figcaption>
-                            Year 4 Bioinformatics Student
-                        </figcaption>
-                    </figure>
-                <aside> 
-                 <a href="#">Github</a>
-                 <a href="#">LinkedIn</a>
-                 <a href="#">Substack</a>
-                 <a href="mailto:info@cbu.ac.zm">Email</a> 
-                </aside>
-            </article>
-        </main>
-        <footer>
-            <p> &copy; 2026 CBU </p>
-        </footer>
-    </body>
+
+    </section>
+</main>
+<aside>
+    <!-- Academic Courses -->
+    <section class="Courses">
+        <h2 class="md text-center my-2">
+            My Academic Courses
+        </h2>
+        <div class="container flex">
+            <div class="card">
+                <h4>BT400 - Project </h4>
+                <img src="images/development.png" alt="">
+            </div>
+            <div class="card">
+                <h4>BT420 - Genomics and Bioinformatics</h4>
+                <img src="images/framework.png" alt="">
+              </div>
+              <div class="card">
+                <h4>CS453 - System Modelling and Simulation</h4>
+                <img src="images/framework.png" alt="">
+              </div>
+              <div class="card">
+                <h4>CS461 - Web Programming</h4>
+                <img src="images/domain.png" alt="">
+              </div>
+              <div class="card">
+                <h4>CS425 - Computer Graphics</h4>
+                <img src="images/ux.png" alt="">
+              </div>
+              <div class="card">
+                <h4>BI451- Climate Education</h4>
+                <img src="images/logos/disaster.png" alt="">
+              </div>
+        </div>
+    </section>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>PEZULU
+                </h1>
+                <p>Copyright &copy; 2026</p>
+            </div>
+            
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
