@@ -146,9 +146,9 @@ footer {
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     main {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns:  1fr;
     }
     
     header {
